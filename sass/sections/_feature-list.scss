@@ -1,0 +1,32 @@
+.feature__list {
+  display: flex;
+}
+.feature__item:not(:last-child) {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.feature__title {
+  @include font(14px, 700, 16px);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature__text {
+  color: var(--title-text-color);
+  line-height: 1.7;
+}
+.background {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: var(--background);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+.background__icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+}

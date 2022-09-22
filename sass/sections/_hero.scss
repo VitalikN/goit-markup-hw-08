@@ -1,0 +1,17 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--outline--background-color);
+}
+
+.hero__title {
+  color: var(--primary-bg-color);
+  @include font(44px, 900, 60px);
+  text-align: center;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

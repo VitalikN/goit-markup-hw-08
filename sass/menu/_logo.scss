@@ -1,0 +1,16 @@
+.logo {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+
+  @include font(26px, 700, 31px);
+}
+.page__logo {
+  margin-right: 93px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.page__studio {
+  color: var(--studio);
+  margin: 0;
+}
