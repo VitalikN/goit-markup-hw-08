@@ -5,10 +5,24 @@
 
   @include font(26px, 700, 31px);
 }
-.page__logo {
-  margin-right: 93px;
-  padding-top: 23px;
-  padding-bottom: 23px;
+
+@media screen and (max-width: 768px) {
+  .page__logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page__logo {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page__logo {
+    margin-right: 93px;
+  }
 }
 .page__studio {
   color: var(--studio);
