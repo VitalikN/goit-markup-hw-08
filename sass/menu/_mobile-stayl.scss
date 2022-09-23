@@ -15,12 +15,6 @@
     }
   }
 
-  //   .mobile__box {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: space-between;
-  //   }
-
   .link.current {
     color: var(--accent-color);
   }
@@ -30,6 +24,7 @@
     letter-spacing: 0.02em;
 
     color: #2196f3;
+    margin-top: auto;
   }
 
   .mobile__item:not(:last-child) {
