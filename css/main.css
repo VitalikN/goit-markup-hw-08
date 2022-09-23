@@ -344,6 +344,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .mobile__nav {
+    margin-bottom: auto;
+  }
   .mobile__list {
     font-family: "Roboto";
     font-style: normal;
@@ -356,9 +359,6 @@ img {
   .mobile__list .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile__box .mobile__nav {
-    margin-bottom: auto;
-  }
   .link.current {
     color: var(--accent-color);
   }
@@ -369,13 +369,6 @@ img {
     letter-spacing: 0.02em;
     color: #2196f3;
   }
-  .mobile-contact__link {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.1666666667;
-    letter-spacing: 0.02em;
-    color: #757575;
-  }
   .mobile__item:not(:last-child) {
     padding-right: 10px;
     margin-right: 10px;
@@ -383,6 +376,13 @@ img {
   }
   .mobile__item {
     margin-top: 64px;
+  }
+  .mobile-contact__link {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1666666667;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
   .mobile__socials {
     display: flex;
@@ -481,25 +481,39 @@ img {
   border-radius: 4px;
 }
 
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--outline--background-color);
+@media screen and (min-width: 320px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-color: var(--outline--background-color);
+  }
+  .hero__title {
+    color: var(--primary-bg-color);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.6153846154;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 360px;
+  }
 }
-
-.hero__title {
-  color: var(--primary-bg-color);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.3636363636;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 696px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3636363636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 696px;
+  }
 }
-
 .overlay {
   max-width: 1600px;
   height: 600px;
