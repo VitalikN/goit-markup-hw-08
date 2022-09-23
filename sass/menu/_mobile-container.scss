@@ -1,0 +1,30 @@
+.mobile__container {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+.close__menu {
+  position: absolute;
+  display: block;
+
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  line-height: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close__icon {
+  width: 40px;
+  height: 40px;
+  color: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu,
+  .burger__menu {
+    display: none;
+  }
+}
