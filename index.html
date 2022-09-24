@@ -266,12 +266,19 @@
         </div>
       </section> 
     <!-- наша команда 4 -->
-    <!-- <section class="section team">
+     <section class="section team">
         <div class="container menu-team">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/Product.jpg" alt="Product Designer" width="270" />
+
+              <picture>
+                <source srcset="./desktop/product-d.jpg 1x, ./desktop/product-d@2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./tablet/product-t.jpg 1x, ./tablet/product-t@2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./mobile/product-m.jpg 1x, ./mobile/product-m@2x.jpg 2x " media="(max-width: 767px)">
+                
+              <img src="./mobile/product-m.jpg" alt="Product Designer"  />
+              </picture>
               <div class="aside">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -304,7 +311,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Frontend.jpg" alt="Frontend Developer" width="270" />
+
+               <picture>
+                <source srcset="./desktop/frontend.jpg 1x, ./desktop/frontend@2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./tablet/frontend-t.jpg 1x, ./tablet/frontend-t@2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./mobile/frontend-m.jpg 1x, ./mobile/frontend-m@2x.jpg 2x " media="(max-width: 767px)">
+              <img src="./mobile/frontend-m.jpg" alt="Frontend Developer"  />
+              </picture>
               <div class="aside">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -337,7 +350,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Marketing.jpg" alt="Marketing" width="270" />
+
+                   <picture>
+                <source srcset="./desktop/marketing.jpg 1x, ./desktop/marketing@2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./tablet/marketing-t.jpg 1x, ./tablet/marketing-t@2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./mobile/marketing-m.jpg 1x, ./mobile/marketing-m@2x.jpg 2x " media="(max-width: 767px)">
+              <img src="./mobile/marketing-m.jpg" alt="Marketing" />
+              </picture>
               <div class="aside">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -370,7 +389,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Designer.jpg" alt="UI Designer" width="270" />
+
+                    <picture>
+                <source srcset="./desktop/designer.jpg 1x, ./desktop/designer@2x.jpg 2x " media="(min-width: 1200px)">
+                <source srcset="./tablet/designer-t.jpg 1x, ./tablet/designer-t@2x.jpg 2x " media="(min-width: 768px)">
+                <source srcset="./mobile/designer-m.jpg 1x, ./mobile/designer-m@2x.jpg 2x " media="(max-width: 767px)">
+              <img src="./mobile/designer-m.jpg" alt="UI Designer" />
+              </picture>
               <div class="aside">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -404,7 +429,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
     <!-- ==============5 Постійні клієнти============ -->
     <!-- <section class="section">

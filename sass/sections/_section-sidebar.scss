@@ -2,6 +2,13 @@
   .section__sidebar {
     display: none;
   }
+  .section__title {
+    color: var(--primari-text-color);
+    @include font(28px, 700, 33px);
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
