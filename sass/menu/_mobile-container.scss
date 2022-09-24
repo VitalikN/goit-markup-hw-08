@@ -5,6 +5,12 @@
   padding-left: 40px;
   padding-bottom: 48px;
 }
+.mobile__box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .close__menu {
   position: absolute;
   display: block;
