@@ -766,91 +766,128 @@ img {
     line-height: 1.7142857143;
   }
 }
-.feature__list {
-  display: flex;
+@media screen and (min-width: 320px) {
+  .feature__list {
+    display: block;
+  }
+  .feature__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .feature__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .feature__text {
+    color: var(--title-text-color);
+    line-height: 1.7;
+  }
+  .background {
+    display: inline-flex;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--background);
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+  }
+  .background__icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
-
-.feature__item:not(:last-child) {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .feature__item:not(:last-child):nth-child(2n) {
+    margin-right: 0;
+  }
+  .feature__item:not(:last-child):nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .background {
+    width: 354px;
+  }
+  .feature__title {
+    text-align: start;
+  }
 }
-
-.feature__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1428571429;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    display: flex;
+  }
+  .feature__item:not(:last-child) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+  .feature__title {
+    text-align: start;
+  }
+  .background {
+    width: 270px;
+  }
 }
-
-.feature__text {
-  color: var(--title-text-color);
-  line-height: 1.7;
+@media screen and (max-width: 1199px) {
+  .section__sidebar {
+    display: none;
+  }
 }
-
-.background {
-  display: inline-flex;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  background-color: var(--background);
-  margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
+@media screen and (min-width: 1200px) {
+  .section__sidebar {
+    padding-top: 0;
+  }
+  .section__title {
+    color: var(--primari-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1666666667;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .image__list {
+    display: flex;
+  }
+  .image__item {
+    max-width: 1200px;
+    height: auto;
+  }
+  .image__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .inner {
+    position: relative;
+    width: 100%;
+  }
+  .inner__text {
+    font-weight: 700;
+    line-height: 1.14;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--team-text--background);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-
-.background__icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.section__sidebar {
-  padding-top: 0;
-}
-
-.section__title {
-  color: var(--primari-text-color);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.1666666667;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.image__list {
-  display: flex;
-}
-
-.image__item {
-  max-width: 1200px;
-  height: auto;
-}
-.image__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.inner {
-  position: relative;
-  width: 100%;
-}
-
-.inner__text {
-  font-weight: 700;
-  line-height: 1.14;
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  left: 0;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  color: var(--team-text--background);
-  background: rgba(47, 48, 58, 0.8);
-}
-
 .team {
   background-color: var(--background);
 }
