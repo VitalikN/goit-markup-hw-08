@@ -6,10 +6,8 @@
 
   .alert {
     margin-bottom: 12px;
+    @include font(20px, 700, 30px);
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
   }
 
@@ -30,7 +28,8 @@
 
   .modal-form__input {
     font-family: Roboto, sans-serif;
-    font-size: 16px;
+    @include font(14px, 400, 16px);
+
     letter-spacing: 0.03em;
     color: var(--primari-text-color);
 
@@ -78,16 +77,14 @@
 
   .modal-form__comment {
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
 
+    @include font(14px, 400, 16px);
+    letter-spacing: 0.01em;
     padding: 12px 16px;
 
     color: rgba(117, 117, 117, 0.5);
@@ -105,9 +102,8 @@
 
   .checkbox__label {
     display: flex;
-    line-height: 1.7;
+    @include font(12px, 400, 14px);
     align-items: center;
-
     color: var(--title-text-color);
   }
 
@@ -145,5 +141,28 @@
     text-decoration-line: underline;
 
     color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .alert {
+    margin-bottom: 12px;
+    @include font(20px, 700, 23px);
+
+    text-align: center;
+  }
+  .modal-form__comment {
+    width: 448px;
+  }
+
+  .modal-form__input {
+    font-family: Roboto, sans-serif;
+    @include font(12px, 400, 14px);
+  }
+  .modal-form__comment {
+    @include font(14px, 400, 16px);
+  }
+  .checkbox__label {
+    @include font(14px, 400, 24px);
   }
 }
