@@ -11,6 +11,10 @@
     align-items: center;
     text-align: center;
   }
+  .footer-container__box {
+    display: flex;
+    flex-direction: column;
+  }
 
   .footer-nav {
     font-style: normal;
@@ -56,11 +60,23 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container__box {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+  }
+
+  .footer-container__box {
+    display: flex;
+    flex-direction: row;
   }
   .footer__item {
     &:not(:last-child) {
