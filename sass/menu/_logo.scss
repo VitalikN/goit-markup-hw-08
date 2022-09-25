@@ -2,8 +2,7 @@
   color: var(--accent-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-
-  @include font(26px, 700, 31px);
+  @include font(24px, 700, 28px);
 }
 
 @media screen and (max-width: 768px) {
@@ -20,6 +19,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700, 31px);
+  }
   .page__logo {
     margin-right: 93px;
   }
