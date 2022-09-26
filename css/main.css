@@ -37,7 +37,7 @@
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -357,6 +357,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
