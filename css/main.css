@@ -566,7 +566,7 @@ img {
 }
 .backdrop {
   position: fixed;
-  overflow: visible;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
