@@ -566,7 +566,6 @@ img {
 }
 .backdrop {
   position: fixed;
-  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -590,6 +589,9 @@ img {
     padding: 40px;
     width: 100%;
     max-width: 450px;
+    height: 100%;
+    max-height: 609px;
+    overflow: scroll;
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -622,6 +624,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+    max-height: 581px;
   }
 }
 @media screen and (max-width: 479px) {
