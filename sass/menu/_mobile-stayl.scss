@@ -18,7 +18,7 @@
     letter-spacing: 0.02em;
     margin-top: auto;
     margin-bottom: 64px;
-    color: #2196f3;
+    color: var(--accent-color);
   }
 
   .mobile__item:not(:last-child) {
@@ -31,7 +31,7 @@
     @include font(24px, 500, 28px);
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--title-text-color);
   }
 
   .mobile__socials {
@@ -44,7 +44,7 @@
     @include font(18px, 500, 22px);
     letter-spacing: 0.02em;
 
-    color: #2196f3;
+    color: var(--accent-color);
   }
 }
 @media screen and (max-width: 460px) {
