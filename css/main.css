@@ -420,7 +420,17 @@ img {
   }
 }
 @media screen and (max-width: 460px) {
+  .mobile__list {
+    font-size: 8.9vw;
+  }
+  .mobile-contact__list {
+    font-size: 7.4vw;
+  }
+  .mobile-contact__link {
+    font-size: 5.22vw;
+  }
   .mobile__socials {
+    font-size: 3.9vw;
     padding-bottom: 10px;
   }
   .mobile__item {
